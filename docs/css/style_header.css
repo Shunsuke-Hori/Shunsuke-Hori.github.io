@@ -1,0 +1,74 @@
+/*                       */
+/* Header of the webpage */
+/*                       */
+.header {
+    overflow: hidden;
+    background-color: rgb(57, 62, 70); 
+    padding: 15px 10px;
+    transition: 0.4s;
+    position: fixed;
+    overflow: visible;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    border-bottom: 1.5px solid rgba(57, 62, 70, 0.3);
+}
+
+.header a {
+    float: left;
+    color: rgb(238, 238, 238);
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    border-radius: 4px;
+}
+
+.header #page_title {
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.header a:hover {
+    background-color: rgb(238, 238, 238);
+    color: rgba(57, 62, 70);
+}
+
+.header a.active {
+    background-color: rgb(33,170,162, 0.8);
+}
+
+.header-right {
+    float: right;
+}
+
+.header-right-dropdownbtn {
+    color: black;
+    font-size: 12px;
+    border: none;
+}
+
+.header-right-dropdown {
+    float: right;
+    position: relative;
+    display: none;
+}
+
+.header-right-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.header-right-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}

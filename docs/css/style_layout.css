@@ -1,0 +1,42 @@
+/**             **/
+/** page layout **/
+/**             **/
+main {
+    display: grid;
+    grid-template-columns: 1fr 15em;
+    max-width: 100em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-color: rgb(238, 238, 238)
+}
+
+/* Everything else */
+* {
+    box-sizing: border-box;
+    color: rgb(34, 40, 49);
+}
+
+
+/* Headings */
+h1 {
+    font-weight: bold;
+    font-size: 1.7em;
+    border-bottom: 1.5px solid rgb(57, 62, 70, 0.9);
+    display: inline-block;
+    margin: 10px 0px 0px 0px;
+}
+
+h2 {
+    font-size: 1.1em;
+    margin: 15px 0px 5px 0px;
+}
+
+/* Section */
+section {
+    padding-bottom: 0.5rem;
+}
