@@ -1,5 +1,7 @@
-# PwesonalWebpage
-None of the templates were to my liking, so I decided to write some HTML code myself.
+# Shunsuke-Hori.github.io
+This is a repository for my personal website.
+
+None of the templates were to my liking, so I decided to write some code myself.
 
 # What I wanted
 - A simple website with one Japanese and one English page.
