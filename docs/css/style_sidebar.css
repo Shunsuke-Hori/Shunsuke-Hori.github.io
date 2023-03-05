@@ -1,0 +1,54 @@
+/*
+CSS for the sidebar navigation
+*/
+
+
+/* 1. Enable smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 2. Make nav sticky */
+main>nav {
+    position: sticky;
+    top: 4rem;
+    align-self: start;
+}
+
+/* 3. ScrollSpy active styles (see JS tab for activation) */
+.section-nav li.active>a {
+    color: #333;
+    font-weight: 500;
+}
+
+/* Sidebar Navigation */
+.section-nav {
+    padding-left: 0;
+    border-left: 1px solid rgb(57, 62, 70, 0.1);
+}
+
+.section-nav a {
+    text-decoration: none;
+    display: block;
+    padding: .125rem 0;
+    color: #ccc;
+    transition: all 50ms ease-in-out;
+    /* 💡 This small transition makes setting of the active state smooth */
+}
+
+.section-nav a:hover,
+.section-nav a:focus {
+    color: #666;
+}
+
+/* When screen is small, hide the sidebar */
+@media (max-width: 767px) {
+    .section-nav {
+        display: none;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+}
