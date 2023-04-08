@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 
-<meta charset="utf-8">
+<html lang="ja">
 
 <head>
+    <title>保里俊介</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style_layout.css">
     <link rel="stylesheet" type="text/css" href="css/style_sidebar.css">
     <link rel="stylesheet" type="text/css" href="css/style_header.css">
@@ -19,10 +21,8 @@
             <a href="index.html">English</a>
         </div>
         <div class="header-right-dropdown" id="header-right-dropdown">
-            <button class="header-right-dropdownbtn">
-                <a href="javascript:void(0);" class="icon">
-                    <i class="fa fa-bars"></i>
-                </a>
+            <button class="header-right-dropdownbtn" onclick="location.href='javascript:void(0);'">
+                <i class="fa fa-bars"></i>
             </button>
             <div class="header-right-dropdown-content">
                 <a href="index.html">English</a>
@@ -40,13 +40,18 @@
                     <p>カリフォルニア大学サンディエゴ校の経済学部博士課程所属です.</p>
                     <p>マクロ経済学とマクロ労働が主な研究対象です.</p>
                     <p>CVは<a href=files/Hori_CV.pdf>ここ</a>からダウンロードしてください.</p>
-                    <p>E-mail: <a href="mailto: shhori@ucsd.edu">shhori@ucsd.edu</a></p>
+                    <p>E-mail: <a href="mailto:shhori@ucsd.edu">shhori@ucsd.edu</a></p>
                 </div>
             </div>
 
             <section id="research">
                 <h1>研究</h1>
-                <div w3-include-html="working_papers.html"></div>
+                <div id="external-content"></div>
+                <script>
+                    $(function () {
+                        $('#external-content').load('working_papers.html');
+                    });
+                </script>
             </section>
             <section id="teaching">
                 <h1>授業</h1>
@@ -85,6 +90,8 @@
         </nav>
     </main>
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/script.js"></script>
     <script>includeHTML();</script>
 </body>
+
+</html>
