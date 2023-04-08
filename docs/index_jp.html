@@ -46,7 +46,12 @@
 
             <section id="research">
                 <h1>研究</h1>
-                <div w3-include-html="working_papers.html"></div>
+                <div id="external-content"></div>
+                <script>
+                    $(function () {
+                        $('#external-content').load('working_papers.html');
+                    });
+                </script>
             </section>
             <section id="teaching">
                 <h1>授業</h1>
