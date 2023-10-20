@@ -1,0 +1,3 @@
+[submodule ".\\docs\\files\\CV"]
+	path = .\\docs\\files\\CV
+	url = https://github.com/Shunsuke-Hori/CV
