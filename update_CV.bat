@@ -1,23 +1,29 @@
 @echo off
 
-echo Updating the submodule(s)...
-
-git checkout main || (echo Failed with error in checking out main branch && pause2 && exit /b)
-
-echo Running git submodule update --remote...
-git submodule update --remote || (echo Failed with error in updating subodule(s) && pause && exit /b)
-
-
-@REM Check the Git status
-git submodule foreach --recursive (
-    cd %%path%%
-    git add .
-    git commit -m "Your commit message"
-    cd ..
+for /f "tokens=*" %%A in ('git status --porcelain') do (
+    set "changes_found=true"
 )
 
+if defined changes_found (
+    echo Unstaged changes found. The submodule update is available only when there is no unstaged changes. Exiting...
+    pause
+    exit /b 1
+) else (
+    echo No unstaged changes found.
+)
 
-@REM git commit -m submodule update --remote || echo Failed with error in updating subodule(s) && pause && exit /b
+echo Updating the submodule(s)...
+
+@REM git checkout main || (echo Failed with error in checking out main branch && pause2 && exit /b)
+
+@REM echo Running git submodule update --remote...
+git submodule update --remote || (echo Failed with error in updating subodule(s) && pause && exit /b)
+
+git add .
+git commit -m "Submodule update by bat file"
+
+
+@REM @REM git commit -m submodule update --remote || echo Failed with error in updating subodule(s) && pause && exit /b
 
 
 
