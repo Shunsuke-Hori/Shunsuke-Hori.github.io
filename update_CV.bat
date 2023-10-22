@@ -20,7 +20,7 @@ echo Updating the submodule(s)...
 git submodule update --remote || (echo Failed with error in updating subodule(s) && pause && exit /b)
 
 git add .
-git commit -m "Submodule update by update_CV.bat on `date`" || (echo Failed with error in committing the change or nothing to commit && pause && exit /b)
+git commit -m "Submodule update by update_CV.bat on $(Get-Date)" || (echo Failed with error in committing the change or nothing to commit && pause && exit /b)
 git push origin main || (echo Failed with error in pushing the commit && pause && exit /b)
 
 pause
