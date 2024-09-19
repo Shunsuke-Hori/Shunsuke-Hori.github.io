@@ -10,7 +10,8 @@ None of the templates were to my liking, so I decided to write some code myself.
 - Sidebar navigation with a table of contents.
 
 # Usage
-- `git submodule update --remote` to update the CV submodule
+- `git submodule init` and then `git submodule update --remote` to update the CV submodule
+    - may not need `git submodule init`?
 
 # Acknowledgments
 
