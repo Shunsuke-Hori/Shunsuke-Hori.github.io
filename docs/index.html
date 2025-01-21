@@ -48,6 +48,7 @@
 
             <section id="research">
                 <h1>Research</h1>
+                <section id="workingpapers">
                 <h2>Working Papers</h2>
                 <div id="external-content-workingpapers"></div>
                 <script>
@@ -55,6 +56,8 @@
                         $('#external-content-workingpapers').load('working_papers.html');
                     });
                 </script>
+                </section>
+                <section id="wip">
                 <h2>Work in Progress</h2>
                 <div id="external-content-wip"></div>
                 <script>
@@ -62,6 +65,7 @@
                         $('#external-content-wip').load('wip.html');
                     });
                 </script>
+                </section>
                 <!-- <h2>Other Projects</h2>
                 <div id="external-content-otherprojects"></div>
                 <script>
@@ -106,7 +110,11 @@
         </div>
         <nav class="section-nav" style="margin-top:100px;font-size:18px">
             <ol style="list-style: none; margin: 0; padding: 0;">
-                <li style="margin-left: 1rem;"><a href="#research">Research</a></li>
+                <li style="margin-left: 1rem;"><a href="#research">Research</a>
+                    <ul style="list-style: none; margin: 0; padding: 0; padding-left: 1rem; font-size: 0.9em;">
+                        <li><a href="#workingpapers">Working Papers</a></li>
+                        <li><a href="#wip">Work in Progress</a></li>
+                    </ul></li>
                 <li style="margin-left: 1rem;"><a href="#teaching">Teaching</a></li>
                 <li style="margin-left: 1rem;"><a href="#links">Links</a></li>
             </ol>
