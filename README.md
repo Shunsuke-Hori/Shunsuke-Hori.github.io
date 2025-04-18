@@ -1,8 +1,12 @@
 # Shunsuke-Hori.github.io
 
-This repository contains the source code for my personal website hosted at https://shunsuke-hori.github.io
+My new webpage is https://shunsuke-hori.pages.dev/
 
-# Overview
+I keep this repository just to setup a redirect page from the old page to the new page.
+
+~~This repository contains the source code for my personal website hosted at https://shunsuke-hori.github.io~~
+
+<!-- # Overview
 None of the templates were to my liking, so I decided to write some code myself.
 # What I wanted
 - A simple website with one Japanese and one English page.
@@ -15,4 +19,4 @@ None of the templates were to my liking, so I decided to write some code myself.
 
 # Acknowledgments
 
-- Color map borrowed from [here](https://colorhunt.co/palette/222831393e46d65a31eeeeee)
+- Color map borrowed from [here](https://colorhunt.co/palette/222831393e46d65a31eeeeee) -->
